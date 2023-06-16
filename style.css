@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'morpheus' ;
+    src: url('../fontes/MORPHEUS.TTF') format('truetype');
+    font-weight: normal;
+    font-family: 'cretino';
+    src: url('fonte/Cretino.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor0:#012340;
+    --cor1:#024873;
+    --cor2:#03658C;
+    --cor3:#04BFBF;
+    --cor4:#ADC5D9;
+    --cor5:white;
+    --cor6:black;
+    --fonte-padrão: Arial, verdana, helvetica, sans-serif;
+    --fonte-morpheus: 'morpheus', cursive; 
+    --fonte-cretino: 'cretino', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-image: url(imagens/Pastor\ frente1500.jpg);
+    height: 720px;
+    margin-top: -20px;
+    min-width: 180px;
+    max-width: 100%;
+    margin: 10px;
+    background-position: center top;
+}
+
+footer{
+    background-color: #04BFBF;
+}
+
+nav{
+    font-size: 1.5em;
+    line-height: 1em;
+    border: 10px;
+    margin-top: 0px;
+    max-width: 800px;
+    min-width: 180px;
+}       
+
+a>h1{
+    background-color: var(--cor6);
+    margin-top: 0px;
+    margin-left: 20px;
+    padding: 0px;
+}
+
+h1{
+    font-family: var(--fonte-morpheus);
+    padding-left: 20px;
+    color: var(--cor5);
+    font-size: 2.5em;
+    width: 283px;
+    height: 50px;
+    line-height: 45px;
+}
+
+h2{
+    color: var(--cor6);
+    margin-top: 200px;
+    margin-left: 40px;
+    width: 250px;
+    height: 200px;;
+    font-size: 2.5rem;
+    max-width: 180px;
+    margin-right: 10px;
+}
+
+button{
+    margin-left: 50px;
+    margin-top: 100px;
+    padding: 5px;
+    width: 180px;
+    font-size: 1em;
+    color: var(--cor5);
+    background-color: #024873;
+}
+
+p{
+    margin-bottom: 40px;
+}
+
+p.nom{
+    font-family: var(--fonte-cretino);
+    margin-top: -51px;
+    margin-left: 200px;
+    font-size: 1.3em;
+}
+
+a{
+    text-decoration: none;
+    padding: 2px;
+    margin-left: 10px;
+    color: var(--cor5);
+    font-weight: bold;
+    transition-duration: 0.5s;
+    min-width: 280px;
+    max-width: 800px;
+}
+
+a>img{
+    margin-top: 15px;
+}
+
+nav > a:hover{
+    background-color: var(--cor6);
+}
+
+div.texto{
+    background-color: var(--cor5);
+    text-align: center;
+    margin-top: 50px;
+}
+
+main > h3{
+    font-size: 1.7em;
+    color: #024873;
+}
+
+main > p{
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+div.quadrado{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    min-width: 180px;
+}
+
+div.quadrado#Q1{
+    background-image: url(imagens/biblia.jpg);
+    background-repeat: no-repeat;
+    background-size: 350px 350px;
+    min-width: 180px;
+    margin: center;
+}
+
+div.quadrado#Q2{
+    background-image: url(imagens/voluntário-de-tecnologia-da-igreja.jpg);
+    background-repeat: no-repeat;
+    background-size: 350px 350px;
+    min-width: 180px;
+    margin: center;
+}
+
+div.quadrado#Q3{
+    background-image: url(imagens/oração.jpg);
+    background-repeat: no-repeat;
+    background-size: 350PX 350PX;
+    min-width: 180px;
+    margin: center;
+}
+
+div.quadrado#Q4{
+    background-image: url(imagens/louvor.jpg);
+    background-repeat: no-repeat;
+    background-size: 350PX 350PX;
+    min-width: 180px;
+    margin: center;
+}
+
+div.quadrado#Q5{
+    background-image: url(imagens/membros.jpg);
+    background-repeat: no-repeat;
+    background-size: 350px 350px;
+    min-width: 180px;
+    margin: center;
+}
+
+div#Q5 > a{
+    color: var(--cor5);
+    background-color: var(--cor6);
+}
+
+div.quadrado#Q6{
+    background-image: url(imagens/manutenção.jpg);
+    background-repeat: no-repeat;
+    background-size: 350px 350px;
+    min-width: 180px;
+    margin: center;
+}
+div#Q6 > a{
+    color: var(--cor6);
+    background-color: var(--cor5);
+}
